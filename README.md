@@ -1,3 +1,7 @@
+# Difference from the `master` branch
+
+No babel dependancy; the complete antd distribution is bundled.
+
 # How to use
 
 - Click "[Use this template](https://github.com/umstek/parcel-typescript-react-antd/generate)" and enter details to create a new repository from this template, or
@@ -15,8 +19,8 @@
 
 # Why should you use this template?
 
-You know the de-facto UI library for the web is [React](https://reactjs.org/), and you want to use a beautiful component library such as [Ant Design](https://ant.design) to jump start development rather than building everything from scratch. Also you know that if you were to use [TypeScript](https://www.typescriptlang.org/) instead of JavaScript, your application will be easy to maintain and there will be less pain caused by `undefined` things here and there. You also want to load modules dynamically, minimize the bundle size, and maybe install many other libraries in the future.  
-Although Ant-Design is mainly a React library and it works fine with TypeScript, there is a slight problem with the ant-design suggested `babel-plugin-import`, which is used to load only the necessary CSS without bloating your app, because, obviously, this is a babel plugin and you are using typescript. Yes, you can configure babel to work with typescript and ant design, configure webpack to do bundling etc. But configuring everything manually is a pain, so you use [CRA](https://facebook.github.io/create-react-app/), and lose the flexibility. If you eject, you are on your own; and if you use other hacks, things get complicated.
+You know the de-facto UI library for the web is [React](https://reactjs.org/), and you want to use a beautiful component library such as [Ant Design](https://ant.design) to jump start development rather than building everything from scratch. Also you know that if you were to use [TypeScript](https://www.typescriptlang.org/) instead of JavaScript, your application will be easy to maintain and there will be less pain caused by `undefined` things here and there. You also want to load modules dynamically, ~~minimize the bundle size,~~ and maybe install many other libraries in the future.  
+Although Ant-Design is mainly a React library and it works fine with TypeScript, ~~there is a slight problem with the ant-design suggested `babel-plugin-import`, which is used to load only the necessary CSS without bloating your app, because, obviously, this is a babel plugin and you are using typescript.~~ Yes, you can configure babel to work with typescript and ant design, configure webpack to do bundling etc. But configuring everything manually is a pain, so you use [CRA](https://facebook.github.io/create-react-app/), and lose the flexibility. If you eject, you are on your own; and if you use other hacks, things get complicated.
 
 Or you can just use [Parcel](https://parceljs.org/), that's why.
 
@@ -38,7 +42,7 @@ Or you can just use [Parcel](https://parceljs.org/), that's why.
 7. Below that, add `<script src="src/index.tsx"></script>`.
 8. Create `tsconfig.json` and add the following.
 
-   ```json
+   ```text
    {
      "compilerOptions": {
        "module": "esnext",
@@ -53,7 +57,7 @@ Or you can just use [Parcel](https://parceljs.org/), that's why.
    }
    ```
 
-9. Create `.babelrc` and add the below.
+9. ~~Create `.babelrc` and add the below.~~
    ```json
    {
      "presets": ["@babel/preset-env"],
@@ -75,6 +79,8 @@ Or you can just use [Parcel](https://parceljs.org/), that's why.
     import * as React from "react";
     import { render } from "react-dom";
     import { Typography } from "antd";
+
+    import "antd/dist/antd.css";
 
     const App = () => (
       <div>
