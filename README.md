@@ -1,7 +1,7 @@
 # How to use
 
-- Click "[Use this template](https://github.com/umstek/parcel-typescript-react-antd/generate)" and enter details to create a new repository from this template.
-- Navigate to https://github.com/umstek/parcel-typescript-react-antd and download the zip.
+- Click "[Use this template](https://github.com/umstek/parcel-typescript-react-antd/generate)" and enter details to create a new repository from this template, or
+- Navigate to https://github.com/umstek/parcel-typescript-react-antd and download the zip, or
 - Clone the repository from the above location.
   ```sh
   # Clone the repo
@@ -9,6 +9,9 @@
   # Remove the .git directory
   rm -rf !$/.git
   ```
+- Then run  
+  `yarn`  
+  `yarn start`
 
 # Why should you use this template?
 
