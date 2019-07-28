@@ -1,3 +1,7 @@
+# Difference from the `master` branch
+
+Contains an example counter implementation using [`redux`](https://redux.js.org/) and [`react-redux`](https://react-redux.js.org/);
+
 # How to use
 
 - Click "[Use this template](https://github.com/umstek/parcel-typescript-react-antd/generate)" and enter details to create a new repository from this template, or
