@@ -1,6 +1,6 @@
 {
   "name": "parcel-typescript-react-antd",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Jumpstart with parcel-bundler, typescript, react and ant-design",
   "license": "MIT",
   "main": "index.html",
@@ -10,16 +10,16 @@
     "start": "parcel index.html --open"
   },
   "dependencies": {
-    "antd": "^3.26.4",
+    "antd": "^4.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.9.0",
-    "@types/react-dom": "^16.9.6",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@types/react-dom": "^16.9.8",
     "babel-plugin-import": "^1.13.0",
     "parcel-bundler": "^1.12.4",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.5"
   }
 }
