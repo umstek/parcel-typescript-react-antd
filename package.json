@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "antd": "^4.3.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
